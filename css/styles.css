@@ -1,4 +1,6 @@
 /* ------------------<БАЗОВІ СТИЛІ ПРОПИСАНІ В КОМАНДНОМУ ПРОЕКТІ---------- */
+@import url('./modern-normalize.css');
+
 :root {
 
 -font-logo: 'Film P3 Bold', sans-serif;
@@ -33,6 +35,8 @@
 
 --color-text-white: #FFFFFF;
 --color-text-brown: #F3C653;
+--color-contacts-section-text-brown: #C79002;
+--color-contacts-section-tel-text: #494848;
 --color-text-gray: #7A7A7A;
 --color-text-light-gray: #B4B4B4;
 --color-contacts-address-hero: #E5E5E5;
@@ -55,21 +59,21 @@
     font-family: 'Film P3';
     font-style: normal;
     font-weight: 700;
-
+  
     src: url('../fonts/FilmP3.ttf');
-}
-@font-face {
+  }
+  @font-face {
     font-family: 'Times New Roman', serif;
     src: url('../fonts/times-new-roman.ttf');
-}
-@font-face {
+  }
+  @font-face {
     font-family: 'Times New Roman Bold', serif;
     src: url('../fonts/times-new-roman-bold.ttf');
-}
-@font-face {
+  }
+  @font-face {
     font-family: 'Montserrat', sans-serif;
     src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-}
+  }
 
 
 /* Reset styles */
@@ -146,27 +150,131 @@ body{
     overflow: hidden;
 }
 
-.container {
-    background-color: aqua;
-}
 
 .contacts {
     background-color: var(--colors-bg-section-fon-lemon);
 }
 .contacts-title {
     margin-bottom: 12px;
-    font-family: Film P3;
+    font-family: 'Film P3', sans-serif;
+    text-transform: uppercase;
     font-size: 40px;
     line-height: 1.075;
     letter-spacing: 0.3em;
     color: var(--color-title-mimiho-dark);
 }
 
+.contacts-text {
+    margin-bottom: 16px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--color-text-gray);
+
+}
+/* .contacts-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+
+.contacts-item-text{
+    
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    align-items: center;
+    color: var(--color-contacts-section-text-brown);
+
+}
+.contacts-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start ;
+    align-items: center;
+}
+.contacts-list-item:first-child>.contacts-item-text {
+    margin-right: 22px;
+}
+.contacts-list-item:nth-child(2n)>.contacts-item-text {
+    margin-right: 54px;
+}
+.contacts-list-item:first-child .contacts-item-link,
+.contacts-phone-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-top: 9px, 8px;
+    background: #FFFFFF;
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+    }
+
+.contacts-item-link {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.214;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: var(--color-contacts-section-tel-text);
+    
+}
+
+.contacts-phone-list {
+    
+
+} */
+
+
+.contacts-address{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 260px;
+    padding: 8px 33px 7px 10px;
+    max-height: 76px;
+    background: #FFFFFF;
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.contacts-address-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.contacts-address-text {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+
+    color: var(--color-contacts-section-tel-text);
+}
+
+.contacts-second-box {
+    margin: 0 auto;
+    width: 384px;
+    
+
+}
+
 @media screen and (min-width: 414px) {
     .container {
         max-width: 414px;
     }
-    
     
     
 }
@@ -181,6 +289,9 @@ body{
         font-size: 64px;
         line-height: 1.078;
     }
+    .contacts-text {
+        margin-bottom: 52px;
+    }
 }
 
   /* ----------DESCTOP------------ */
@@ -190,6 +301,11 @@ body{
     }
     .contacts-title {
         margin-bottom: 16px;
+    }
+    .contacts-text {
+        margin-bottom: 40px;
+        font-size: 20px;
+        line-height: 1.2;
     }
 }
 
