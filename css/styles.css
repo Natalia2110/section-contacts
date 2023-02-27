@@ -60,15 +60,15 @@
     font-style: normal;
     font-weight: 700;
   
-    src: url('../fonts/FilmP3.ttf');
+    src: url('./fonts/FilmP3.ttf');
   }
   @font-face {
     font-family: 'Times New Roman', serif;
-    src: url('../fonts/times-new-roman.ttf');
+    src: url('./fonts/times-new-roman.ttf');
   }
   @font-face {
     font-family: 'Times New Roman Bold', serif;
-    src: url('../fonts/times-new-roman-bold.ttf');
+    src: url('./fonts/times-new-roman-bold.ttf');
   }
   @font-face {
     font-family: 'Montserrat', sans-serif;
